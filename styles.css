@@ -1,0 +1,193 @@
+.main{
+    background-image: url(images/pina.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 820px;
+    background-size: cover;
+  
+}
+
+body{
+    margin: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    /* text-shadow: .5px .5px #DDDDEC; */ 
+}
+@media screen and (min-width:1000px){
+    #container{
+        height: 768px;
+        width: 1000px;
+        margin: 0 auto;
+        /* margin to center everything */
+    }
+}
+
+.header{
+    margin-top: 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    float: right;
+    margin-top: 26px;
+    margin-right: 10px;
+    
+}
+
+.navbar{
+    color: white;
+    font-size: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    /* underlining is text deco */
+  
+}
+
+/* pseudoclass is another state of this class (:hover) */
+
+
+
+/* unvisited link */
+.navbar:link {
+    color: #FFf;
+}
+
+/* visited link */
+.navbar:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+.navbar:hover {
+    color: #F0F0FA;
+}
+
+span{
+    width: 100%;
+}
+
+h1{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    /* clear both clears the white margin */
+    padding-top: 240px;
+}
+
+h2{
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    /* clear both clears the white margin */
+    margin-top: -50px;
+}
+
+#blurb{
+    font-size: 20px;
+    color: #2557A5;
+    text-align: left;
+    clear: both;
+    /* clear both clears the white margin */
+    
+    margin-right: 102px;
+    margin-left: 102px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+/* HEADER SECTION for 'about me' page */
+
+#head{
+    width: 100%;
+    height: 375px;
+    background-image: url(images/header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutme{
+    padding-top: 75px;
+    margin-bottom:-30px;
+}
+
+#skills{
+    background-color: #FFD33C;
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding: 30px 40px;
+    color: #FFFFFF !important;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+h3{
+    font-size: 36px;
+    color: #fff;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.card {
+    width: 150px;                 /* Set width of cards */
+    border: 1px solid rgb(184, 184, 209);    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    display: flex inline-block;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    margin: auto;
+    border-radius: 20px;
+    
+  }
+
+  .card-header {
+    color: #2557A5;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(184, 184, 209);;
+    background-color: white;
+    padding: 5px 10px;
+  }
+  
+  .card-main {
+    display: flex;              /* Children use Flexbox */
+    flex-direction: column;     /* Rotate Axis to Vertical */
+    justify-content: center;    /* Group Children in Center */
+    align-items: center;        /* Group Children in Center (on cross axis) */
+    padding: 20px 20px;            /* Add padding to the top/bottom */
+  }
+  
+  .material-icons {
+    font-size: 36px;
+    color: rgb(184, 184, 209);
+    margin-bottom: 5px;
+  }
+  
+
+  .row {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cardimg{
+    height: 80px;
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+  }
