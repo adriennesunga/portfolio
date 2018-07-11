@@ -4,13 +4,13 @@
     background-repeat: no-repeat;
     height: 820px;
     background-size: cover;
-  
 }
 
 body{
     margin: 0px;
     font-family: 'Nunito Sans', sans-serif;
     /* text-shadow: .5px .5px #DDDDEC; */ 
+    background-color: #F8F7F4;
 }
 @media screen and (min-width:1000px){
     #container{
@@ -90,7 +90,7 @@ h2{
     text-align: left;
     clear: both;
     /* clear both clears the white margin */
-    
+    background-color: #FFF;
     margin-right: 102px;
     margin-left: 102px;
     margin-top: 50px;
@@ -127,9 +127,8 @@ h2{
     margin-top: 0;
     padding: 30px 40px;
     color: #FFFFFF !important;
-    margin-left: 50px;
-    margin-right: 50px;
-
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 h3{
@@ -149,6 +148,9 @@ h3{
     flex-direction: column;       /* Rotate Axis */
     margin: auto;
     border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 4px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 2px 4px 4px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 2px 4px 4px #ccc;
     
   }
 
@@ -168,6 +170,8 @@ h3{
     justify-content: center;    /* Group Children in Center */
     align-items: center;        /* Group Children in Center (on cross axis) */
     padding: 20px 20px;            /* Add padding to the top/bottom */
+    background-color: #FFF;
+    
   }
   
   .material-icons {
@@ -191,3 +195,55 @@ h3{
     max-width: 80px;
     height: auto;
   }
+
+  #contact{
+    background-color: #5EB5D4;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 30px 40px;
+    color: #FFFFFF !important;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#contactlinks{
+    font-size: 20px;
+    color: #2557A5;
+    text-align: left;
+    
+    clear: both;
+    /* clear both clears the white margin */
+    background-color: #FFF;
+    margin-right: 102px;
+    margin-left: 102px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+/* unvisited link */
+a:link {
+    color: #2557A5;
+}
+
+/* visited link */
+a:visited {
+    color: #2557A5;
+}
+
+/* mouse over link */
+a:hover {
+    font-size: 120%;
+}
+
+/* selected link */
+a:active {
+    color: #2557A5;
+}
