@@ -1,9 +1,11 @@
 .main{
-    background-image: url(images/pina.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 820px;
-    background-size: cover;
+    background-color: orange;
+    min-height: 100vh;
+    background-image: url(images/mobile.jpg);
+        background-position: center ;
+        background-repeat: no-repeat;
+        
+        background-size: cover;
 }
 
 body{
@@ -11,14 +13,6 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     /* text-shadow: .5px .5px #DDDDEC; */ 
     background-color: #F8F7F4;
-}
-@media screen and (min-width:1000px){
-    #container{
-        height: 768px;
-        width: 1000px;
-        margin: 0 auto;
-        /* margin to center everything */
-    }
 }
 
 .header{
@@ -45,8 +39,6 @@ nav{
 
 /* pseudoclass is another state of this class (:hover) */
 
-
-
 /* unvisited link */
 .navbar:link {
     color: #FFf;
@@ -66,55 +58,32 @@ span{
     width: 100%;
 }
 
-h1{
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    clear: both;
-    /* clear both clears the white margin */
-    padding-top: 240px;
-}
-
-h2{
-    font-size: 36px;
-    color: #fff;
-    text-align: center;
-    clear: both;
-    /* clear both clears the white margin */
-    margin-top: -50px;
-}
-
-#blurb{
-    font-size: 20px;
-    color: #2557A5;
+.blurb{
+    font-size: 13px;
+    color: darkblue;
     text-align: left;
     clear: both;
     /* clear both clears the white margin */
     background-color: #FFF;
-    margin-right: 102px;
-    margin-left: 102px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 2px 2px 0 0;
-    border: 1px solid #ccc;
+   border-radius: 20px;
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         3px 3px 5px 6px #ccc;
+    padding-left: 9px;
+    padding-right: 9px;
+ 
 }
 
 /* HEADER SECTION for 'about me' page */
 
-#head{
-    width: 100%;
-    height: 375px;
+.head{
+    
     background-image: url(images/bg2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .aboutme{
@@ -141,7 +110,8 @@ h3{
 }
 
 .card {
-    width: 150px;                 /* Set width of cards */
+    height: 17vh;
+    width: 25vw;                 /* Set width of cards */
     border: 1px solid rgb(184, 184, 209);    /* Set up Border */
     border-radius: 4px;           /* Slightly Curve edges */
     overflow: hidden;             /* Fixes the corners */
@@ -149,9 +119,7 @@ h3{
     flex-direction: column;       /* Rotate Axis */
     margin: auto;
     border-radius: 20px;
-    -webkit-box-shadow: 2px 2px 4px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    2px 2px 4px 4px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         2px 2px 4px 4px #ccc;
+    box-shadow:         1px 1px 2px 2px #ccc;
     
   }
 
@@ -183,7 +151,7 @@ h3{
   .card-header {
     color: #2557A5;
     text-align: center;
-    font-size: 13.5px;
+    font-size: 12px;
     font-weight: 600;
     border-bottom: 1px solid rgb(184, 184, 209);;
     background-color: white;
@@ -216,10 +184,10 @@ h3{
   }
 
   .cardimg{
-    height: 80px;
-    width: 100%;
-    max-width: 80px;
-    height: auto;
+    height: 40px;
+    width: 40px;
+    
+    
   }
 
   #contact{
@@ -232,16 +200,16 @@ h3{
     margin-right: 40px;
 }
 
-#contactlinks{
-    font-size: 20px;
+.contactlinks{
+    font-size: 12px;
     color: #2557A5;
     text-align: left;
     
     clear: both;
     /* clear both clears the white margin */
     background-color: #FFF;
-    margin-right: 102px;
-    margin-left: 102px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 2px 2px 0 0;
@@ -249,9 +217,8 @@ h3{
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         3px 3px 5px 6px #ccc;
+    box-shadow:         1px 1px 2px 2px #ccc;
+    border-radius: 20px;
 }
 
 /* unvisited link */
@@ -262,11 +229,6 @@ a:link {
 /* visited link */
 a:visited {
     color: #2557A5;
-}
-
-/* mouse over link */
-a:hover {
-    font-size: 120%;
 }
 
 /* selected link */
@@ -296,3 +258,167 @@ a:active {
     from, to { border-color: transparent }
     10% { border-color: black; }
   } */
+
+
+  h1{
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    /* clear both clears the white margin */
+    padding-top: 130px;
+    
+}
+
+h2{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    /* clear both clears the white margin */
+    margin-top: -50px;
+}
+
+/* --------------------------------CSS FOR DESKTOP --------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+@media screen and (min-width:1000px){
+    #container{
+        height: 768px;
+        width: 1000px;
+        margin: 0 auto;
+        /* margin to center everything */
+    }
+
+    h1{
+        font-size: 83px;
+        color: #fff;
+        text-align: center;
+        clear: both;
+        /* clear both clears the white margin */
+        padding-top: 240px;
+        
+    }
+
+    h2{
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        clear: both;
+        /* clear both clears the white margin */
+        margin-top: -50px;
+    }
+
+    .main{
+        background-image: url(images/pina.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 820px;
+        background-size: cover;
+    }
+
+    .blurb{
+        font-size: 21px;
+        color: #2557A5;
+        text-align: left;
+        clear: both;
+        /* clear both clears the white margin */
+        background-color: #FFF;
+        margin-right: 102px;
+        margin-left: 102px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 2px 2px 0 0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        box-shadow:         3px 3px 5px 6px #ccc;
+    }
+    .head{
+        width: 100%;
+        height: 375px;
+        background-image: url(images/bg2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .contactlinks{
+        font-size: 20px;
+        color: #2557A5;
+        text-align: left;
+        
+        clear: both;
+        /* clear both clears the white margin */
+        background-color: #FFF;
+        margin-right: 102px;
+        margin-left: 102px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 2px 2px 0 0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+        box-shadow:         3px 3px 5px 6px #ccc;
+    }
+
+    .card {
+        width: 150px;                 /* Set width of cards */
+        border: 1px solid rgb(184, 184, 209);    /* Set up Border */
+        border-radius: 4px;           /* Slightly Curve edges */
+        overflow: hidden;             /* Fixes the corners */
+        display: flex inline-block;                /* Children use Flexbox */
+        flex-direction: column;       /* Rotate Axis */
+        margin: auto;
+        border-radius: 20px;
+        -webkit-box-shadow: 2px 2px 4px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow:    2px 2px 4px 4px #ccc;  /* Firefox 3.5 - 3.6 */
+        box-shadow:         2px 2px 4px 4px #ccc;
+        
+      }
+
+      .cardimg{
+        height: 80px;
+        width: 100%;
+        max-width: 80px;
+        height: auto;
+      }
+
+      .card-header {
+        color: #2557A5;
+        text-align: center;
+        font-size: 13.5px;
+        font-weight: 600;
+        border-bottom: 1px solid rgb(184, 184, 209);;
+        background-color: white;
+        padding: 5px 10px;
+      }
+      /* unvisited link */
+        a:link {
+            color: #2557A5;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #2557A5;
+        }
+
+        /* mouse over link */
+        a:hover {
+            font-size: 120%;
+        }
+
+        /* selected link */
+        a:active {
+            color: #2557A5;
+        }
+};
