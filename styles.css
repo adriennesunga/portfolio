@@ -1,18 +1,70 @@
+/* Style The Dropdown Button */
+.dropbtn {
+    border-radius: 2px;
+    background-color: #fff;
+    color: rgb(17, 134, 150);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-image: url("images/hamburg.svg");
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #c2c9ca;
+}
+
+
+
 .main{
     background-color: orange;
     min-height: 100vh;
     background-image: url(images/mobile.jpg);
-        background-position: center ;
-        background-repeat: no-repeat;
-        
-        background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
     margin: 0px;
     font-family: 'Nunito Sans', sans-serif;
     /* text-shadow: .5px .5px #DDDDEC; */ 
-    background-color: #F8F7F4;
 }
 
 .header{
@@ -25,7 +77,7 @@ nav{
     float: right;
     margin-top: 26px;
     margin-right: 10px;
-    
+
 }
 
 .navbar{
@@ -34,7 +86,6 @@ nav{
     margin-left: 25px;
     text-decoration: none;
     /* underlining is text deco */
-  
 }
 
 /* pseudoclass is another state of this class (:hover) */
@@ -69,7 +120,7 @@ span{
     margin-left: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-   border-radius: 20px;
+    border-radius: 20px;
     padding: 10px;
     padding-left: 9px;
     padding-right: 9px;
@@ -165,7 +216,7 @@ h3{
     align-items: center;        /* Group Children in Center (on cross axis) */
     padding: 20px 20px;            /* Add padding to the top/bottom */
     background-color: #FFF;
-    
+
   }
   
   .material-icons {
@@ -186,8 +237,6 @@ h3{
   .cardimg{
     height: 40px;
     width: 40px;
-    
-    
   }
 
   #contact{
@@ -289,7 +338,7 @@ h2{
     #container{
         height: 768px;
         width: 1000px;
-        margin: 0 auto;
+        
         /* margin to center everything */
     }
 
@@ -299,7 +348,8 @@ h2{
         text-align: center;
         clear: both;
         /* clear both clears the white margin */
-        padding-top: 240px;
+       
+        
         
     }
 
@@ -309,7 +359,8 @@ h2{
         text-align: center;
         clear: both;
         /* clear both clears the white margin */
-        margin-top: -50px;
+       
+        
     }
 
     .main{
@@ -387,10 +438,13 @@ h2{
       }
 
       .cardimg{
-        height: 80px;
+        height: 70px;
         width: 100%;
-        max-width: 80px;
+        max-width: 65px;
         height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .card-header {
@@ -413,9 +467,9 @@ h2{
         }
 
         /* mouse over link */
-        a:hover {
+        /* a:hover {
             font-size: 120%;
-        }
+        } */
 
         /* selected link */
         a:active {
