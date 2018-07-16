@@ -10,12 +10,14 @@
     margin-left: 20px;
     margin-top: 10px;
     background-image: url("images/hamburg.svg");
+    position: fixed;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    position: fixed;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -138,8 +140,9 @@ span{
 }
 
 .aboutme{
-    padding-top: 75px;
+    padding-top: 130px;
     margin-bottom:-30px;
+    margin-top: auto;
 }
 
 #skills{
@@ -316,7 +319,7 @@ a:active {
     clear: both;
     /* clear both clears the white margin */
     padding-top: 130px;
-    
+    margin-top: auto;
 }
 
 h2{
@@ -342,12 +345,21 @@ h2{
         /* margin to center everything */
     }
 
+    .aboutme{
+        padding-top: 130px;
+        margin-bottom:-30px;
+        margin-top: auto;
+        margin-left: -195px !important;
+    }
+
     h1{
         font-size: 83px;
         color: #fff;
         text-align: center;
         clear: both;
         /* clear both clears the white margin */
+        padding-top: 250px;
+        padding-left: 200px
        
         
         
@@ -359,6 +371,7 @@ h2{
         text-align: center;
         clear: both;
         /* clear both clears the white margin */
+        padding-left:200px;
        
         
     }
