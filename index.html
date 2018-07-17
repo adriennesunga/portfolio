@@ -11,24 +11,43 @@
 <body>
     <div class="main">
         <div id="container">
-             <div class="dropdown">
-                <button class="dropbtn"></button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Home</a>
-                        <a href="aboutme.html">About Me</a>
-                        <a target="_blank" href="https://docs.google.com/document/d/1HmZdTE3dQRq1xjzp7aGYbx-aL_LPgiTW_XlYYwDbbSg/edit?usp=sharing">Résumé</a>
-                     </div>
-              </div>
-             <div>
-                <span>
-                    <h1>Adrienne Sunga</h1>
-                </span>
-                <span>
-                    <h2 class="mainindex">Fullstack Web Developer.</h2>
-                </span>
+            <span class="open-slide">
+                 <a href="#" onclick="openSlideMenu()">
+                    <svg style="padding-top: 12px; padding-left: 12px;" width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                     </svg>
+                </a>
+            </span>
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a target="_blank" href="https://docs.google.com/document/d/1HmZdTE3dQRq1xjzp7aGYbx-aL_LPgiTW_XlYYwDbbSg/edit?usp=sharing">Résumé</a>
             </div>
+         <div>
+            <span>
+                <h1>Adrienne Sunga</h1>
+            </span>
+            <span>
+                <h2 class="mainindex">Fullstack Web Developer.</h2>
+            </span>
+        </div>
         </div>
     </div>
+
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+     </script>
 </body>
 </html>
 
